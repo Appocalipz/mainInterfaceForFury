@@ -1,0 +1,30 @@
+# general
+*~
+*.log
+tmp
+dump
+
+# scala
+target
+*.sc
+
+#IntelliJ
+*.ipr
+*.iws
+.idea
+
+# sbt specific
+.cache/
+.lib/
+dist/*
+lib_managed/
+project/boot/
+project/target/
+project/plugins/project/
+
+#Loggin Files
+*.log
+
+# Play
+logs
+RUNNING_PID
