@@ -7,6 +7,10 @@ class ComputerCraft extends Controller {
     val lines = scala.io.Source.fromFile("app/assets/get/"+id+"/"+index+".lua").mkString
     Ok(lines)
   }
+  def player (name: String) = Action {
+    //val lines = scala.io.Source.fromFile("app/assets/get/"+id+"/"+index+".lua").mkString
+    Ok("{\"playerName\":\""+name+"\"}")
+  }
 }
 
 

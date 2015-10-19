@@ -2,6 +2,8 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET        /                  controllers.Application.index
-GET        /:id/:index        controllers.ComputerCraft.get(id: String, index: String)
+GET        /                    controllers.Application.index
+GET        /player/:name        controllers.ComputerCraft.player(id: name)
+GET        /:id/:index          controllers.ComputerCraft.get(id: String, index: String)
+
 
