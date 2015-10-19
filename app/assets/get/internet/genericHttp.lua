@@ -1,12 +1,11 @@
-os.loadAPI("genericLog")
-os.loadAPI("json")
+os.loadAPI("api/internet/genericLog")
+os.loadAPI("api/internet/json")
 
 function get(site)
   http.request(site)
   local stillRequesting = true
   while stillRequesting do
     local event, url, sourceText = os.pullEvent()
-
     if event == "http_success" then
       stillRequesting = false
       local respondedText = sourceText.readAll()
