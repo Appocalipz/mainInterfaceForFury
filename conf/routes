@@ -3,7 +3,7 @@
 # ~~~~
 
 GET        /                    controllers.Application.index
-GET        /player/:name        controllers.ComputerCraft.player(id: String)
+GET        /player/:name        controllers.ComputerCraft.player(name: String)
 GET        /:id/:index          controllers.ComputerCraft.get(id: String, index: String)
 
 
